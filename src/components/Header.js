@@ -12,7 +12,7 @@ function Header() {
     const items = useSelector(selectItems)
 
     return (
-        <header className="sticky">
+        <header className="sticky top-0 z-50">
             <div className="flex items-center bg-amazon_blue p1 flex-grow py-2">
                 <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
                     <Image 
@@ -37,7 +37,7 @@ function Header() {
                         </p>
                         <p className="font-extrabold md:text-sm">Account & Lists</p>
                     </div>
-                    <div className="link">
+                    <div className="link" onClick={() => router.push('/orders')}>
                         <p>Returns</p>
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>
